@@ -1,0 +1,13 @@
+sudo: required
+dist: xenial
+
+language: python
+
+python:
+  - "3.6"
+
+before_install:
+  - yum install ansible
+
+script: 
+  - ansible --version
